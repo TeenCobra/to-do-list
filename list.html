@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TODO List</title>
+</head>
+<body>
+    
+    <div class="text-box1">
+        <h1>To-do :</h1> <hr color="black">
+        <textarea id="taskInput" placeholder="Add a new task..." style="width: 100%; height: 30px; resize: none; box-sizing: border-box;"></textarea> 
+        <button id="addTaskButton">Add task</button> <br>
+        <ul id="taskList"></ul>
+    </div>
+
+    <div class="text-box2">
+        <h1>Pend :</h1> 
+        <hr color="black">
+        <ul id="pendList"></ul>
+    </div>
+
+    <div class="text-box3">
+        <h1>Done :</h1> 
+        <hr color="black">
+        <ul id="doneList"></ul>
+    </div>
+
+    <!-- Modal for task options -->
+<div id="taskModal" class="modal">
+    <div class="modal-content">
+        <b><p>Where to shift the task?</p></b><br>
+        <button id="pendButton">Pend</button>
+        <button id="doneButton">Done</button>
+        <button id="closeModalButton">Cancel</button>
+    </div>
+</div>
+
+<!-- Modal for shifting tasks from Pend -->
+<div id="pendTaskModal" class="modal">
+    <div class="modal-content">
+        <b><p>Where to shift the task?</p></b><br>
+        <button id="toDoButton">To-Do</button>
+        <button id="doneButtonPend">Done</button>
+        <button id="closePendModalButton">Cancel</button>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
